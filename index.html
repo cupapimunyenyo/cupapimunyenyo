@@ -1,3 +1,30 @@
 <body style="background:#ffcccc">
 <h1>Hai guys welcome to my first website, perkenalkan namaku Zaidah</h1>
 </body>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Hai ini Zaidah </h1>
+<h2>"My Hobby"</h2>
+
+<p>Masukkan hobi favoritmu</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+ let person = prompt("masukkan salah satu hobi favoritmu", "");
+  if (person != null) {
+    var x = document.createElement("SPAN");
+  	var t = document.createTextNode(person+" ");
+  	x.appendChild(t);
+  	document.body.appendChild(x);
+  }
+}
+</script>
+
+</body>
+</html>
