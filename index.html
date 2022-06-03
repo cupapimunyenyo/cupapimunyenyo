@@ -10,7 +10,7 @@
 
 <p>Masukkan hobi favoritmu</p>
 
-<button onclick="myFunction()">Try it</button>
+<button onclick="myFunction()">Try it</button> <a id="halo"></a>
 
 <p id="demo"></p>
 <!DOCTYPE html>
@@ -24,13 +24,40 @@
 </html>
 
 <script>
+  var tampung = ""
 function myFunction() {
  let person = prompt("masukkan salah satu hobi favoritmu", "");
   if (person != null) {
     var x = document.createElement("SPAN");
   	var t = document.createTextNode(person+" ");
-  	x.appendChild(t);
-  	document.body.appendChild(x);
+  	// x.appendChild(t);
+  	// document.body.appendChild(x);
+    if(person == "zaidah"){
+      alert("lapo manggil namaku?")
+    }
+    else if(person == "baim"){
+      alert("dia suka ngerusuh")
+    }
+    else if(person == "muhammad"){
+      alert("he is a good boy ^^")
+    }
+    else if(person == "khadijah"){
+      person = "jijid" 
+      alert("she is unique")
+    }
+    else if(person == "maryam"){
+      alert("she is my angel baby")
+    }
+    else if(person == "asma'"){
+      alert("she is wibu bin otaku bin gamer")
+    }
+    else if(person == "syifa'"){
+      alert("annoying person, sok sibuk padahal gabut, drama lovers,")
+    }
+    tampung += person+" , "
+
+    document.getElementById("halo").innerHTML = tampung
+
   }
 }
 </script>
